@@ -17,6 +17,12 @@ console.log(thirdArr === newArr); // Will be true
 // Combine two arrays
 const arr1 = [12, 23, 34, 45];
 const arr2 = [56, 67, 78, 89];
+
+// Good: 
+const combined = arr1.concat(arr2);
+console.log(combined);
+
+// Best:
 const combinedArr = [...arr1, ...arr2];
 console.log(combinedArr); // Prints: [12, 23, 34, 45, 56, 67, 78, 89];
 ```
